@@ -1,0 +1,212 @@
+*{
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: #6c7279;
+    box-sizing: border-box;
+}
+
+body{
+	background: url(img/valoback.jpg);
+	background-position: center;
+}
+
+
+:root{
+	--bg-color: #ced8e6;
+	--text-color: rgb(255, 255, 255);
+	--second-color: #ccc;
+	--main-color: #fffcfb;
+	--p-font: 1.1rem;
+}
+
+::-webkit-scrollbar{
+  width: 0px;
+}
+
+.containerrr{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	background-color: transparent;
+}
+header{
+    background-color: transparent;
+	position:relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	padding: 15px 10%;
+}
+.header__inner{
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+
+}
+
+.header_logo a{
+	display: flex;
+	align-items: center;
+    text-decoration: none;
+	color: var(--text-color);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.header_logo ion-icon{
+	color: var(--main-color);;
+	font-size: 40px;
+	margin-right: 5px;
+}
+
+
+
+@media(max-width: 890px){
+	header{
+		position: fixed;
+		padding: 12px 2.5%;
+		transition: .1s;
+		z-index: 20;
+		border-bottom: 1px solid #918f8f;
+	}
+	.header__inner{
+		border-bottom: none;
+	}
+	section{
+		padding: 110px 3% 60px;
+	}
+	#menu-icon{
+		color: var(--text-color);
+	}
+}
+
+
+.cover  {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+
+#form {
+	height: 500px;
+    background-color: #f0f0f0;
+    display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    z-index: 10;
+    position: relative;
+    width: 500px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 4px 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+#form h1{
+	color: #404142;
+	margin: 0;
+	padding-bottom: 50px;
+	font-size: 30px;
+}
+
+
+
+#form button {
+    padding: 5px;
+    margin-top: 5px;
+    width: 80px;
+	height: 80px;
+    background-color: transparent;
+    border: 2px solid rgb(196, 195, 195);
+    border-radius: 20px;
+}
+
+#form button:hover{
+	border: 2px solid black;
+}
+
+#form button ion-icon{
+	font-size: 30px;
+	color: rgb(196, 195, 195);}
+
+
+.cover #form .input-control {
+    background-color: #f0f0f0;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+	width: 300px;
+}
+
+label{
+	font-size: 15px;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+	color: #404142;
+	width: 300px;
+}
+
+.adis a{
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: #404142;
+	font-size: 13px;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.checked{
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+
+#form .check{
+	display: flex;
+	align-items: center;
+}
+
+#form .check .checked{
+	margin-left: 5px;
+}
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: flex;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+	border: 2px solid black;
+	transition: 1s;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+}
+
+  
+  
